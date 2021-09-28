@@ -28,7 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -103,7 +103,7 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: ssh: git@github.com:maohuohuo/maohuohuo.github.io.git
+  repository: ssh:git@github.com:maohuohuo/maohuohuo.github.io.git
   branch: master
 
 menu:
