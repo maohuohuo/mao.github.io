@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		about | 
+		正则表达式 | 
 	 
 	升获
 	</title>
@@ -151,7 +151,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2021/10/10/zheng-ze-biao-da-shi/02-zheng-ze-biao-da-shi/">
 										02-正则表达式
 									</a>
@@ -180,24 +180,98 @@ var _hmt = _hmt || [];
 	<div id="content">
 		<h1 id="article-title">
 
-	about
+	02-正则表达式
 </h1>
 <div class="article-meta">
 	
 	<span>mao</span>
-	<span>2021-09-27 10:51:39</span>
+	<span>2021-10-10 16:37:58</span>
 		<div id="article-categories">
     
+		<span>Categories：</span>
+            
+    
 
+    
+		<span>Tags：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-tag" aria-hidden="true">
+                        <a href="/tags/正则表达式/">正则表达式</a>
+                        </i>
+                    </span>
+                
+            
     
 		</div>
 
 </div>
 
 <div id="article-content">
-	
+	<h2 id="零宽度断言（前后预查）"><a href="#零宽度断言（前后预查）" class="headerlink" title="零宽度断言（前后预查）"></a>零宽度断言（前后预查）</h2><table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">描述</th>
+<th align="center">例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">?=</td>
+<td align="center">正先行断言-存在</td>
+<td align="center">表达式 (T|t)he(?=\sfat) 匹配 The 和 the ,且后面跟着 (空格)fat</td>
+</tr>
+<tr>
+<td align="center">?!</td>
+<td align="center">负先行断言-排除</td>
+<td align="center">表达式 (T|t)he(?!\sfat) 匹配 The 和 the，且其后不跟着 (空格)fat。</td>
+</tr>
+<tr>
+<td align="center">?&lt;=</td>
+<td align="center">正后发断言-存在</td>
+<td align="center">表达式 (?&lt;=(T|t)he\s)(fat|mat) 匹配 fat 和 mat，且其前跟着 The 或 the</td>
+</tr>
+<tr>
+<td align="center">?&lt;!</td>
+<td align="center">负后发断言-排除</td>
+<td align="center">表达式 (?&lt;!(T|t)he\s)(cat) 匹配 cat，且其前不跟着 The 或 the</td>
+</tr>
+</tbody></table>
+<h2 id="易混淆"><a href="#易混淆" class="headerlink" title="易混淆"></a>易混淆</h2><h3 id="1、-关于”-”"><a href="#1、-关于”-”" class="headerlink" title="1、 关于”^”"></a>1、 关于”^”</h3><ul>
+<li><p>在 /^ABC/ 里 ^ 为匹配输入字符串的开始位置</p>
+</li>
+<li><p>在 [^ABC] 里 ^ 表’非’，即匹配除了ABC的所有字符</p>
+</li>
+</ul>
+<!-- ### 2、 关于"?"
++ 匹配前面的子表达式零次或一次。例如，"do(es)?" 可以匹配 "do" 或 "does" 。? 等价于 {0,1}。
+
++ 当该字符紧跟在任何一个其他限制符 (*, +, ?, {n}, {n,}, {n,m}) 后面时，匹配模式是非贪婪的。非贪婪模式尽可能少的匹配所搜索的字符串，而默认的贪婪模式则尽可能多的匹配所搜索的字符串。例如，对于字符串 "oooo"，o+? 将匹配单个 o，而 o+ 将匹配所有 o。
++ o+? 和 o? 的区别
+o+?匹配单个o , o?匹配0或1个o -->
+
 </div>
 
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2021/10/10/zheng-ze-biao-da-shi/01-zheng-ze-fang-fa/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  01-正则方法
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2021/10/08/di-tu/">
+                
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
 
 
 

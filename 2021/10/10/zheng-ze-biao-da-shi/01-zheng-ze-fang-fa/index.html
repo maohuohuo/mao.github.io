@@ -150,6 +150,15 @@ var _hmt = _hmt || [];
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/10/10/zheng-ze-biao-da-shi/02-zheng-ze-biao-da-shi/">
+										02-正则表达式
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -200,14 +209,27 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<h2 id="1、RegExp-对象方法"><a href="#1、RegExp-对象方法" class="headerlink" title="1、RegExp 对象方法"></a>1、RegExp 对象方法</h2><h4 id="test"><a href="#test" class="headerlink" title="test()"></a>test()</h4><p><em>语法</em>：regObj.test(str) 对字符串执行搜索<br><em>返回值</em>：布尔值。测试str中是否存在匹配regObj模式的字符串，存在返回true，不存在返回false</p>
-<h4 id="compile"><a href="#compile" class="headerlink" title="compile()"></a>compile()</h4><p><em>语法</em>：regObj.compile(str) 编译正则表达式</p>
-<h4 id="exec"><a href="#exec" class="headerlink" title="exec()"></a>exec()</h4><p><em>语法</em>：regObj.exec(str)对字符串执行搜索<br><em>返回值</em>：.如果没有匹配的文本则返回null，否则返回一个结果数组：<br><em>返回的数组</em>：第一个元素与正则表达式相匹配的文本；第二个元素是与RegExpObject的第一个子表达式相匹配的文本（如果有的话）；第三个元素是与RegExpObject的第二个子表达式相匹配的文本（如果有的话），以此类推。<br>且该数组具有index属性： 声明匹配文本的第一个字符的位置<br>该数组有input属性： 存放被检索的字符串string</p>
-<h2 id="2、String-对象方法"><a href="#2、String-对象方法" class="headerlink" title="2、String 对象方法"></a>2、String 对象方法</h2><p>String对象方法  str.fun(reg);与regExp对象方法相反</p>
-<h4 id="search"><a href="#search" class="headerlink" title="search()"></a>search()</h4><p><em>语法</em>：str.search(regObj) 检索与字符串相匹配的值，每次都从头开始检索<br><em>返回值</em>：字符串第一次检索到的位置，若没有返回-1</p>
-<h4 id="match"><a href="#match" class="headerlink" title="match()"></a>match()</h4><p><em>语法</em>：str.match(regObj) 找到一个或多个正则表达式的匹配，要加g，不加则只返回一个结果<br><em>返回值</em>：返回数组，该方法类似 indexOf() 和 lastIndexOf()，但是它返回指定的值，而不是字符串的位置,而是检索出来的内容数组形式展现</p>
-<h4 id="replace"><a href="#replace" class="headerlink" title="replace()"></a>replace()</h4><p><em>语法</em>：str.replace(regObj/str,替换的内容) 替换与正则表达式或字符相匹配的字串，要加g，不加则只替换一个子串<br><em>返回值</em>：返回数组，该方法类似 indexOf() 和 lastIndexOf()，但是它返回指定的值，而不是字符串的位置,而是检索出来的内容数组形式展现</p>
-<h4 id="split"><a href="#split" class="headerlink" title="split()"></a>split()</h4><p><em>语法</em>：str.split(regObj/str,howmay) 把字符串分割为字符串数组,第二个参数可选（是数组的最大长度）<br><em>返回值</em>：返回数组</p>
+	<blockquote>
+<h2 id="一、-RegExp-对象方法"><a href="#一、-RegExp-对象方法" class="headerlink" title="一、 RegExp 对象方法"></a>一、 RegExp 对象方法</h2></blockquote>
+<h3 id="1、-test"><a href="#1、-test" class="headerlink" title="1、 test()"></a>1、 test()</h3><p><strong>语法</strong>：regObj.test(str) 对字符串执行搜索</p>
+<p><strong>返回值</strong>：布尔值。测试str中是否存在匹配regObj模式的字符串，存在返回true，不存在返回false</p>
+<h3 id="2、-compile"><a href="#2、-compile" class="headerlink" title="2、 compile()"></a>2、 compile()</h3><p><strong>语法</strong>：regObj.compile(str) 编译正则表达式</p>
+<h3 id="3、-exec"><a href="#3、-exec" class="headerlink" title="3、 exec()"></a>3、 exec()</h3><p><strong>语法</strong>：regObj.exec(str)对字符串执行搜索</p>
+<p><strong>返回值</strong>：.如果没有匹配的文本则返回null，否则返回一个结果数组：</p>
+<p><strong>返回的数组</strong>：第一个元素与正则表达式相匹配的文本；第二个元素是与RegExpObject的第一个子表达式相匹配的文本（如果有的话）；第三个元素是与RegExpObject的第二个子表达式相匹配的文本（如果有的话），以此类推。</p>
+<p>且该数组具有index属性： 声明匹配文本的第一个字符的位置</p>
+<p>该数组有input属性： 存放被检索的字符串string</p>
+<blockquote>
+<h2 id="二、-String-对象方法"><a href="#二、-String-对象方法" class="headerlink" title="二、 String 对象方法"></a>二、 String 对象方法</h2><p>String对象方法  str.fun(reg)与regExp对象方法相反</p>
+</blockquote>
+<h3 id="1、-search"><a href="#1、-search" class="headerlink" title="1、 search()"></a>1、 search()</h3><p><strong>语法</strong>：str.search(regObj) 检索与字符串相匹配的值，每次都从头开始检索</p>
+<p><strong>返回值</strong>：字符串第一次检索到的位置，若没有返回-1</p>
+<h3 id="2、-match"><a href="#2、-match" class="headerlink" title="2、 match()"></a>2、 match()</h3><p><strong>语法</strong>：str.match(regObj) 找到一个或多个正则表达式的匹配，要加g，不加则只返回一个结果</p>
+<p><strong>返回值</strong>：返回数组，该方法类似 indexOf() 和 lastIndexOf()，但是它返回指定的值，而不是字符串的位置,而是检索出来的内容数组形式展现</p>
+<h3 id="3、-replace"><a href="#3、-replace" class="headerlink" title="3、 replace()"></a>3、 replace()</h3><p><strong>语法</strong>：str.replace(regObj/str,替换的内容) 替换与正则表达式或字符相匹配的字串，要加g，不加则只替换一个子串</p>
+<p><strong>返回值</strong>：返回数组，该方法类似 indexOf() 和 lastIndexOf()，但是它返回指定的值，而不是字符串的位置,而是检索出来的内容数组形式展现</p>
+<h3 id="4、-split"><a href="#4、-split" class="headerlink" title="4、 split()"></a>4、 split()</h3><p><strong>语法</strong>：str.split(regObj/str,howmay) 把字符串分割为字符串数组,第二个参数可选（是数组的最大长度）</p>
+<p><strong>返回值</strong>：返回数组</p>
 
 </div>
 
@@ -218,8 +240,8 @@ var _hmt = _hmt || [];
         </div>
         <div class="item right">
             
-              <a href="/2021/10/08/di-tu/">
-                
+              <a href="/2021/10/10/zheng-ze-biao-da-shi/02-zheng-ze-biao-da-shi/">
+                02-正则表达式
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             
